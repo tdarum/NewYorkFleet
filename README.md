@@ -19,47 +19,48 @@ Menyarankan perbaikan operasional untuk meminimalkan jarak tempuh kosong dan wak
 
 
 ## Project Use Case
-1. Pengoptimalan driver dan armada taksi
+### 1. Pengoptimalan driver dan armada taksi
 Masalah : Bagaimana cara mengoptimalkan operasi dari fleet dengan meningkatkan efisiensi dan mengurangi waktu idle
     Analisa yang akan dilakukan : 
         - Menganalisa rata-rata panjang trip dan durasi trip 
         - Mengidentifikasi zona pick up dan drop off yang paling tinggi berdasarkan waktu
         - Melakukan pengoptimalan distribusi  armada dengan melakukan perbaningan demand tinggi dan  low ddemand
-2. Cara mengidentifikasi waktu paling ramai dan memprediksi jumlah demand pada waktu tertentu
+### 2. Cara mengidentifikasi waktu paling ramai dan memprediksi jumlah demand pada waktu tertentu
 Masalah Kapan dan dimana demand taxi meningkat 
     Analisa :
         - Menggunakan lpep_pickup_datetime untuk melakukan analisa waktu pick up paling ramai
         - mengidentifikasi peak hours, days of the week, and seasons
         - Segment by payment types to identify high-revenue periods.
 
-3. Preferensi Pembayaran dan Pengaruh Pendapatan Driver
+### 3. Preferensi Pembayaran dan Pengaruh Pendapatan Driver
 Masalah: Metode pembayaran mana yang paling populer, dan bagaimana pengaruhnya terhadap pendapatan driver
    Analisa
         - Analisis jenis pembayaran 
         - Membandingkan pendapatan total dan perilaku tip di seluruh metode pembayaran.
 
-4. Hubungan antara Tarif Perjalanan dan Jarak
+### 4. Hubungan antara Tarif Perjalanan dan Jarak
 Masalah: Apakah ada korelasi antara jarak perjalanan dan jumlah tarif?
     Analisa
         - Buat diagram sebar antara Jarak_perjalanan dan Jumlah_tarif.
         - Hitung korelasi untuk memahami perilaku penetapan harga.
         - Melakukan analisa outlier (misalnya, tarif sangat tinggi dengan jarak pendek).
 
-5. Analisis Durasi Perjalanan dan Zona
+### 5. Analisis Durasi Perjalanan dan Zona
 Masalah: Zona mana (PULocationID, DOLocationID) yang mengalami waktu tempuh terlama?
-Pendekatan:
+    Analisa:
         - Hitung durasi perjalanan dari lpep_pickup_datetime hingga lpep_dropoff_datetime.
-Bagikan waktu tempuh berdasarkan zona penjemputan dan pengantaran.
-Identifikasi zona dengan kemacetan lalu lintas atau penundaan yang sering terjadi.
+        - Bagikan waktu tempuh berdasarkan zona penjemputan dan pengantaran.
+        - Identifikasi zona dengan kemacetan lalu lintas atau penundaan yang sering terjadi.
 
-6. Dampak Biaya Tambahan pada Total Tarif
+### 6. Dampak Biaya Tambahan pada Total Tarif
 Masalah: Bagaimana biaya tambahan (pajak MTA, biaya tambahan, tol) memengaruhi total tarif?
-Pendekatan:
-Bandingkan Total_amount dengan Fare_amount di berbagai perjalanan.
-Analisis frekuensi dan dampak biaya tambahan dan biaya tambahan.
+    Analisa:
+        - Bandingkan Total_amount dengan Fare_amount di berbagai perjalanan.
+        - Analisis frekuensi dan dampak biaya tambahan dan biaya tambahan.
 Identifikasi pola (misalnya, biaya tol yang lebih tinggi pada rute bandara).
 Potensi Hasil:
 Rincian komponen total tarif dengan rekomendasi untuk penetapan harga yang transparan.
+
 7. Mendeteksi Perjalanan Fraud
 Masalah: 
 Apakah ada perjalanan yang tidak biasa yang dapat mengindikasikan kesalahan entri data atau penipuan?
@@ -70,8 +71,7 @@ Menandai perjalanan dengan nilai yang mencurigakan untuk Passenger_count (misaln
 Hasil/ visualisasi 
 Jumlah perjalanan yang mungkin merupakan penipuan
 
-4. Perbandingan antara performa vendor
-Key Questions:
+8. Perbandingan antara performa vendor
 Apakah ada perbedaan antara average trip distance , waktu dan biaya dari vendor 1 dan 2
 Customer satisfaction berdasarkan tip yang diberikan user
 
@@ -85,19 +85,7 @@ Requirements for the software and other tools to build, test and push
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development
-environment running
 
-Say what the step will be
-
-    Give the example
-
-And repeat
-
-    until finished
-
-End with an example of getting some data out of the system or using it
-for a little demo
 
 ## Running the tests
 
