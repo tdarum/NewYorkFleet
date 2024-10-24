@@ -1,18 +1,83 @@
 # New York Data
 
-New York merupakan salah satu kota tersibuk di dunia. Trasnportasi yang paling sering digunakan sebagai transpotasi sehari - hari adalah taxi. Project ini akan akan berfokus pada melakukan analisa terhadap data dan memberikan insight berdasarkan data taxi NYC trip sehingga dapat melihat pattern, melakukan optimalisasi service, dan provide  
+New York merupakan salah satu kota tersibuk di dunia. Trasnportasi yang paling sering digunakan sebagai transpotasi sehari - hari adalah taxi. Project ini akan akan berfokus pada melakukan analisa terhadap data dan memberikan insight berdasarkan data taxi NYC trip sehingga dapat melihat pattern, melakukan optimalisasi service, dan provide      
 Project ini bertujuan untuk melakukan
 
 Initially appeared on
 [gist](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2). But the page cannot open anymore so that is why I have moved it here.
+##  Garis besar Project
 
-## Getting Started
+### Analisis Data Eksplorasi (EDA):
+- Identifikasi pola frekuensi perjalanan, jarak, dan jumlah tarif.
+- emukan jam sibuk dan zona penjemputan/pengantaran yang populer.
+Analisis perilaku penumpang (misalnya, jenis perjalanan, metode pembayaran).
 
-These instructions will give you a copy of the project up and running on
-your local machine for development and testing purposes. See deployment
-for notes on deploying the project on a live system.
+Rekomendasi:
 
-### Prerequisites
+Memberikan wawasan untuk membantu operator taksi mengoptimalkan rute dan mengelola distribusi armada.
+Menyarankan perbaikan operasional untuk meminimalkan jarak tempuh kosong dan waktu tunggu.
+
+
+## Project Use Case
+1. Pengoptimalan driver dan armada taksi
+Masalah : Bagaimana cara mengoptimalkan operasi dari fleet dengan meningkatkan efisiensi dan mengurangi waktu idle
+    Analisa yang akan dilakukan : 
+        - Menganalisa rata-rata panjang trip dan durasi trip 
+        - Mengidentifikasi zona pick up dan drop off yang paling tinggi berdasarkan waktu
+        - Melakukan pengoptimalan distribusi  armada dengan melakukan perbaningan demand tinggi dan  low ddemand
+2. Cara mengidentifikasi waktu paling ramai dan memprediksi jumlah demand pada waktu tertentu
+Masalah Kapan dan dimana demand taxi meningkat 
+    Analisa :
+        - Menggunakan lpep_pickup_datetime untuk melakukan analisa waktu pick up paling ramai
+        - mengidentifikasi peak hours, days of the week, and seasons
+        - Segment by payment types to identify high-revenue periods.
+
+3. Preferensi Pembayaran dan Pengaruh Pendapatan Driver
+Masalah: Metode pembayaran mana yang paling populer, dan bagaimana pengaruhnya terhadap pendapatan driver
+   Analisa
+        - Analisis jenis pembayaran 
+        - Membandingkan pendapatan total dan perilaku tip di seluruh metode pembayaran.
+
+4. Hubungan antara Tarif Perjalanan dan Jarak
+Masalah: Apakah ada korelasi antara jarak perjalanan dan jumlah tarif?
+    Analisa
+        - Buat diagram sebar antara Jarak_perjalanan dan Jumlah_tarif.
+        - Hitung korelasi untuk memahami perilaku penetapan harga.
+        - Melakukan analisa outlier (misalnya, tarif sangat tinggi dengan jarak pendek).
+
+5. Analisis Durasi Perjalanan dan Zona
+Masalah: Zona mana (PULocationID, DOLocationID) yang mengalami waktu tempuh terlama?
+Pendekatan:
+        - Hitung durasi perjalanan dari lpep_pickup_datetime hingga lpep_dropoff_datetime.
+Bagikan waktu tempuh berdasarkan zona penjemputan dan pengantaran.
+Identifikasi zona dengan kemacetan lalu lintas atau penundaan yang sering terjadi.
+
+6. Dampak Biaya Tambahan pada Total Tarif
+Masalah: Bagaimana biaya tambahan (pajak MTA, biaya tambahan, tol) memengaruhi total tarif?
+Pendekatan:
+Bandingkan Total_amount dengan Fare_amount di berbagai perjalanan.
+Analisis frekuensi dan dampak biaya tambahan dan biaya tambahan.
+Identifikasi pola (misalnya, biaya tol yang lebih tinggi pada rute bandara).
+Potensi Hasil:
+Rincian komponen total tarif dengan rekomendasi untuk penetapan harga yang transparan.
+7. Mendeteksi Perjalanan Fraud
+Masalah: 
+Apakah ada perjalanan yang tidak biasa yang dapat mengindikasikan kesalahan entri data atau penipuan?
+Analsia
+Identifikasi perjalanan dengan durasi yang sangat panjang atau jarak pendek dengan tarif tinggi.
+Mendeteksi perjalanan yang ditandai sebagaiPerjalanan yang dibatalkan" (Payment_type = 4 atau 6).
+Menandai perjalanan dengan nilai yang mencurigakan untuk Passenger_count (misalnya, jumlah yang sangat tinggi).
+Hasil/ visualisasi 
+Jumlah perjalanan yang mungkin merupakan penipuan
+
+4. Perbandingan antara performa vendor
+Key Questions:
+Apakah ada perbedaan antara average trip distance , waktu dan biaya dari vendor 1 dan 2
+Customer satisfaction berdasarkan tip yang diberikan user
+
+Lorem Ipsum
+
+### Library
 
 Requirements for the software and other tools to build, test and push 
 - [Example 1](https://www.example.com)
