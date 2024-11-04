@@ -18,7 +18,7 @@ The steps applied in this project will include but are not limited to these high
         - Map hot zones for pickups and drop-offs based on PULocationID and DOLocationID.
         - Look at fare vs. trip distance based on Rate Codes.
         - Check different usage patterns among different payment methods.
-### 3. Feature Engineering
+### 3. Add Column
         New features to be created are as follows:
         - trip duration : Time difference between dropoff and pickup.
         - Trip Speed: The trip distance divided by the trip time .
