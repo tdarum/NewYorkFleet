@@ -1,4 +1,4 @@
-#Background
+## Background
 
 The New York City Taxi and Limousine Commission (TLC) regulates one of the largest, most active transportation systems in the world. With thousands of yellow cabs, green taxis, and for-hire vehicles crisscrossing the city daily, there are hundreds of millions of passenger trips annually, each creating a digital record of trip duration and distance, fare, and payment type. Aggregated data published by the NYC TLC illustrates salient features of transportation trends, economic activities, and mobility in city areas.
 
@@ -41,5 +41,8 @@ This analysis, therefore, attempts to take an approach concerned with maximizing
 - NYC TLC Trip Record.csv : Raw data that need to be cleaned
 - NYC_Trip_cleaned_Location.xlsx : cleaned data
 - apstone2Theresia-NYTaxi Visualization.ipynb : data visualization file
+
+## Tableau link 
+- https://public.tableau.com/app/profile/theresia.diah/viz/NYCTaxi_17307281520960/MainTaxiDashboard?publish=yes
 
 
