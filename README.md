@@ -1,10 +1,10 @@
-# New York Data
+#Background
 
-New York merupakan salah satu kota tersibuk di dunia. Trasnportasi yang paling sering digunakan sebagai transpotasi sehari - hari adalah taxi. Project ini akan akan berfokus pada melakukan analisa terhadap data dan memberikan insight berdasarkan data taxi NYC trip sehingga dapat melihat pattern, melakukan optimalisasi service, dan provide      
-Project ini bertujuan untuk melakukan
+The New York City Taxi and Limousine Commission (TLC) regulates one of the largest, most active transportation systems in the world. With thousands of yellow cabs, green taxis, and for-hire vehicles crisscrossing the city daily, there are hundreds of millions of passenger trips annually, each creating a digital record of trip duration and distance, fare, and payment type. Aggregated data published by the NYC TLC illustrates salient features of transportation trends, economic activities, and mobility in city areas.
 
-Initially appeared on
-[gist](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2). But the page cannot open anymore so that is why I have moved it here.
+New York City is a global business hub, and it attracts many tourists too. Not only for the locals but also for the visiting tourists and traveling employees, taxi services need to be prompt. But at a time when the yellow cabs are getting tough competition from ride-sharing services and considering the task of navigating through the traffic of a heavily populated metropolis, efficiency and revenue optimization in conventional taxi services have gained paramount importance for both the policymakers and taxi operators.
+
+
 ##  Garis besar Project
 The steps applied in this project will include but are not limited to these highlighted below.
 
@@ -23,91 +23,23 @@ The steps applied in this project will include but are not limited to these high
         - trip duration : Time difference between dropoff and pickup.
         - Trip Speed: The trip distance divided by the trip time .
         - Rush Hour: Provides an indicator flag on whether it is rush hours.
-
+### 4. Statistical Approach
+### 5. Data Visualization
 
 ## Project Use Case
-In this capstone project there are some question that needs to be answered:
+This analysis, therefore, attempts to take an approach concerned with maximizing the number of trips by taxis within New York City, which will translate into maximum revenue amongst the drivers and operators. The focus of this project, through the analysis of TLC Trip Record data, is thus to:
 
-1. Driver and fleet optimization : How to optimize fleet operations by increasing efficiency and reducing idle time
-
-2. How to identify the busiest times and predict the amount of demand at a given time When and where taxi demand increases
-
-3. Payment Preferences and Driver Income Impact Which payment methods are most popular, and how do they impact driver income
-
-4. Relationship between Trip Fare and Distance Is there a correlation between trip distance and fare amount?
-
-5. Trip Duration and Zone Analysis Which zones (PULocationID, DOLocationID) experience the longest travel times?
-6. Impact of Surcharges on Total Fare How do surcharges (MTA taxes, surcharges, tolls) affect total fare?
-7. Detecting Fraudulent Trips Are there any unusual trips that could indicate data entry errors or fraud?
-8. Comparison between vendor performance Is there a difference between the average trip distance, time and cost of vendor 1 and 2
-
-Lorem Ipsum
-
-### Library
-
-Requirements for the software and other tools to build, test and push 
-- [Example 1](https://www.example.com)
-- [Example 2](https://www.example.com)
-
-### Installing
+- Analyze the pattern and determinants of the number of trips. 
+- Understand the relationship between payment types and fare amounts with trip counts and revenues.
+- Remove those data inconsistencies, such as negative fare values, which may interfere with appropriate data analysis.
+- Give actionable recommendations to drivers and operators on how to maximize their trip counts and revenues with insights such as the best operating hours or hotspots of high demand.
 
 
 
-## Running the tests
+## Directory : 
+- Capstone2Theresia-NYTaxi-Location.ipynb : data preparation code
+- NYC TLC Trip Record.csv : Raw data that need to be cleaned
+- NYC_Trip_cleaned_Location.xlsx : cleaned data
+- apstone2Theresia-NYTaxi Visualization.ipynb : data visualization file
 
-Explain how to run the automated tests for this system
 
-### Sample Tests
-
-Explain what these tests test and why
-
-    Give an example
-
-### Style test
-
-Checks if the best practices and the right coding style has been used.
-
-    Give an example
-
-## Deployment
-
-Add additional notes to deploy this on a live system
-
-## Built With
-
-  - [Contributor Covenant](https://www.contributor-covenant.org/) - Used
-    for the Code of Conduct
-  - [Creative Commons](https://creativecommons.org/) - Used to choose
-    the license
-
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
-of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [Semantic Versioning](http://semver.org/) for versioning. For the versions
-available, see the [tags on this
-repository](https://github.com/PurpleBooth/a-good-readme-template/tags).
-
-## Authors
-
-  - **Billie Thompson** - *Provided README Template* -
-    [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of
-[contributors](https://github.com/PurpleBooth/a-good-readme-template/contributors)
-who participated in this project.
-
-## License
-
-This project is licensed under the [CC0 1.0 Universal](LICENSE.md)
-Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
-details
-
-## Acknowledgments
-
-  - Hat tip to anyone whose code is used
-  - Inspiration
-  - etc
