@@ -40,7 +40,7 @@ This analysis, therefore, attempts to take an approach concerned with maximizing
 - Capstone2Theresia-NYTaxi-Location.ipynb : data preparation code
 - NYC TLC Trip Record.csv : Raw data that need to be cleaned
 - NYC_Trip_cleaned_Location.xlsx : cleaned data
-- apstone2Theresia-NYTaxi Visualization.ipynb : data visualization file
+- Capstone2Theresia-NYTaxi Visualization.ipynb : data visualization file
 
 ## Tableau link 
 - https://public.tableau.com/app/profile/theresia.diah/viz/NYCTaxi_17307281520960/MainTaxiDashboard?publish=yes
