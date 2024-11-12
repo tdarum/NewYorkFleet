@@ -5,7 +5,7 @@ The New York City Taxi and Limousine Commission (TLC) regulates one of the large
 New York City is a global business hub, and it attracts many tourists too. Not only for the locals but also for the visiting tourists and traveling employees, taxi services need to be prompt. But at a time when the yellow cabs are getting tough competition from ride-sharing services and considering the task of navigating through the traffic of a heavily populated metropolis, efficiency and revenue optimization in conventional taxi services have gained paramount importance for both the policymakers and taxi operators.
 
 
-##  Garis besar Project
+##  Project Steps
 The steps applied in this project will include but are not limited to these highlighted below.
 
 ### 1. Data Preprocessing and Cleaning
